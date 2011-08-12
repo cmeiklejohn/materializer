@@ -67,7 +67,7 @@ This gem currently works with rails 3.1.x or higher.
 
 == License
 
-Materializer is Copyright © 2011 Swipely.  It is free software, and may be redistributed under the terms specified in the LICENSE file.
+Materializer is Copyright © 2011 Christopher Meiklejohn.  It is free software, and may be redistributed under the terms specified in the LICENSE file.
 
 == About
 
