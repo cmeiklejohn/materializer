@@ -1,16 +1,7 @@
 = Materializer
 
-Define a series of JSON representations of objects, and persist them on
-save for fast rendering in the view.
-
-== Why?
-
-Well, in short, when rendering pages with hundreds, if not thousands of
-objects, building the JSON was taking much too long.  Instead, we wanted
-to maintain denormalized representations of infrequently changing data
-to render, thereby cutting out the render time .  Unfortunately, these
-were pages that could not be cached entirely since it could be any
-subset of the large grouping of objects returned.
+Persist serialization in the model by front-loading the serialization
+and storing in the database as a string.
 
 == Usage
 
@@ -39,7 +30,7 @@ Voila!
 
 FIELD_NAME will be populated with the JSON generated from
 METHOD_NAME on save.  METHOD_NAME should be implemented as a
-as_json-type method returning a hash.
+serializable_hash method returning a hash.
 
 === Examples
 
@@ -60,10 +51,6 @@ Some examples on usage:
     def all_as_json
       { :field1 => field1, :association1 => association1.as_json } 
     end
-
-== Compatibility 
-
-This gem currently works with rails 3.1.x or higher.
 
 == License
 
