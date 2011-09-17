@@ -3,5 +3,4 @@ rvm:
   - 1.9.2
 script: "bundle exec rake spec"
 gemfile:
-  - gemfiles/rails-3.1.0.rc5.gemfile
-  - gemfiles/rails-master.gemfile
+  - gemfiles/rails-3.1.0.gemfile
