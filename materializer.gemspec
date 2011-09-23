@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Christopher Meiklejohn"]
   s.email       = ["christopher.meiklejohn@gmail.com"]
   s.homepage    = "https://github.com/cmeiklejohn/materializer"
-  s.summary     = %q{Pre-render objects as JSON for serving up.}
-  s.description = %q{Pre-render objects as JSON for serving up.}
+  s.summary     = %q{Persist serialization in the model.}
+  s.description = s.summary
 
   s.rubyforge_project = "materializer"
 
